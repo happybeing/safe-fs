@@ -31,7 +31,7 @@ The following APIs are proposed in order to make the writing of common file hand
 
 ## SAFE FS POSIX Style API
 
-As a default, the SAFE FS API feature can be assumed to be equvalent to the FUSE operation which it supports. Naming of SAFE FS APIs should reflect this, and I propose we use exactly the same names for the public API functions but inserting an underscore between 'words'. This maintains correspondence between each FUSE OP and its SAFE FS API, and with the naming of other SAFE APIs. So `getattr()` would be `get_attr()` in the SAFE FS API.
+As a default, the SAFE FS API feature can be assumed to be equvalent to the FUSE operation which it supports. We may be able to implement this using existing Rust traits such as [fuse::Filesystem](https://docs.rs/fuse/0.3.1/fuse/trait.Filesystem.html) (see also [polyfuse::Filesystem](https://docs.rs/polyfuse/0.3.3/polyfuse/trait.Filesystem.html)), and from these generate language bindings which should faithfully reflect the POSIX APIs as does FUSE.
 
 NOTE: The following information was taken from the FUSE documentation generated from the source code, but there is also a good description of both APIs including side-by-side comparission here:
 - *FUSE Library Options and High- and Low-Level APIs* (CS Department, Stony Brook University [website](https://www.fsl.cs.stonybrook.edu/docs/fuse/fuse-article-appendices.html))
