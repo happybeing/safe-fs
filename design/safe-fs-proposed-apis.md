@@ -31,7 +31,7 @@ The following APIs are proposed in order to make the writing of common file hand
 
 ## SAFE FS POSIX Style API
 
-As a default, the SAFE FS API feature can be assumed to be equvalent to the FUSE operation which it supports. We may be able to implement this using existing Rust traits such as [fuse::Filesystem](https://docs.rs/fuse/0.3.1/fuse/trait.Filesystem.html) (see also [polyfuse::Filesystem](https://docs.rs/polyfuse/0.3.3/polyfuse/trait.Filesystem.html)), and from these generate language bindings which should faithfully reflect the POSIX APIs as does FUSE.
+As a default, the SAFE FS API feature can be assumed to be equvalent to the FUSE operation which it supports. We may be able to implement this using existing Rust traits such as [fuse::Filesystem](https://docs.rs/fuse/0.3.1/fuse/trait.Filesystem.html) (see also [genfs](https://docs.rs/genfs/0.1.4/genfs/), [polyfuse::Filesystem](https://docs.rs/polyfuse/0.3.3/polyfuse/trait.Filesystem.html)), and from these generate language bindings which should faithfully reflect the POSIX APIs as does FUSE.
 
 NOTE: The following information was taken from the FUSE documentation generated from the source code, but there is also a good description of both APIs including side-by-side comparission here:
 - *FUSE Library Options and High- and Low-Level APIs* (CS Department, Stony Brook University [website](https://www.fsl.cs.stonybrook.edu/docs/fuse/fuse-article-appendices.html))
