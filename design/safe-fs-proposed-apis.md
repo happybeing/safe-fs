@@ -165,7 +165,7 @@ Most operations have equivalents with identical names in both high-level (`fuse_
 
 More information is available on both APIs and an excellent side-by-side comparission is available in *FUSE Library Options and High- and Low-Level APIs* (CS Department, Stony Brook University [website](https://www.fsl.cs.stonybrook.edu/docs/fuse/fuse-article-appendices.html))
 
-#### Low-level Only Operations
+#### High-level Only Operations
 | Operation    | Description                                      |
 | ------------ | ------------------------------------------------ |
 | `chmod()`    | change mode of a path                            |
@@ -175,7 +175,7 @@ More information is available on both APIs and an excellent side-by-side compari
 | `utimens()`  | change atime/ctime of a file                     |
 | `read_buf()` | like `read()` but no copying needs to take place |
 
-#### High-level Only operations
+#### Low-level Only operations
 | Operation          | Description                                              |
 | ------------------ | -------------------------------------------------------- |
 | `lookup()`         | look up a directory entry by name and get its attributes |
