@@ -9,6 +9,7 @@ Currently being designed. No useful code here!
 See misc design documents in ./design:
 
 - [SAFE FS Proposed APIs](https://github.com/theWebalyst/safe-fs/blob/master/design/safe-fs-proposed-apis.md)
+- [SAFE FS Design and implementation](https://github.com/theWebalyst/safe-fs/blob/master/design/safe-fs-design-and-implementation.md)
 
 ## LICENSE
 
