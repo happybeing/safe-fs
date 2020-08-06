@@ -1,5 +1,5 @@
 # SAFE FS Design and implementation
-This is a tentative design with notes on selected areas of implementation to help identify options for implementing a SAFE Network filesystem and the [SAFE FS API(./safe-fs-proposed-apis.md)] (which is also at an early stage).
+This is a tentative design with notes on selected areas of implementation to help identify options for implementing a SAFE Network filesystem and the [SAFE FS API](./safe-fs-proposed-apis.md) (which is also at an early stage).
 
 To Do list of areas to discuss:
 - summary of POSIX filesystem:
